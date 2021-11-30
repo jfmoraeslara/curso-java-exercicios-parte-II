@@ -9,7 +9,7 @@ public class Program {
 	public static void main(String[] args) {
 
 		// caminho para acessar o arquivo
-		File file = new File("C:\\temp\\in.txt");
+		File file = new File("C:\\temp\\in.txt.txt");
 		Scanner sc = null;
 		try {
 			sc = new Scanner(file);
