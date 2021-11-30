@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Program {
 
 	public static void main(String[] args) {
-		
+
 		// caminho para acessar o arquivo
 		File file = new File("C:\\temp\\in.txt");
 		Scanner sc = null;
@@ -15,16 +15,16 @@ public class Program {
 			sc = new Scanner(file);
 			while (sc.hasNextLine()) {
 				System.out.println(sc.nextLine());
-			}			
+			}
 		}
 		catch (FileNotFoundException e) {
 			System.out.println("Error opening file: " + e.getMessage());
 		}
 		finally {
-			if (sc != null)
+			if (sc != null) {
 				sc.close();
+			}
+			System.out.println("Finally block executed");
 		}
-		System.out.println("Finally block executed");
 	}
 }
-
